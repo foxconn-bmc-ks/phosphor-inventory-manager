@@ -78,7 +78,7 @@ AC_DEFINE_UNQUOTED([IFACE], ["$IFACE"], [The manager DBus interface.])
 
 AC_ARG_VAR(PIM_PERSIST_PATH, [Path of directory housing persisted inventory.])
 AS_IF([test "x$PIM_PERSIST_PATH" == "x"], \
-    [PIM_PERSIST_PATH="/var/lib/phosphor-inventory-manager"])
+    [PIM_PERSIST_PATH="/run/initramfs/phosphor-inventory-manager"])
 AC_DEFINE_UNQUOTED([PIM_PERSIST_PATH], ["$PIM_PERSIST_PATH"], \
     [Path of directory housing persisted inventory])
 
